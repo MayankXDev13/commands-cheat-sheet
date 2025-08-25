@@ -1,7 +1,12 @@
 ## daily command linux
 
-# check if nginx is running
+# NGINX is running
 
 ```
  sudo systemctl status nginx
+```
+# Reload NGINX
+
+```
+sudo systemctl reload nginx
 ```
