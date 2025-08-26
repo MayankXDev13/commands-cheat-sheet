@@ -10,3 +10,7 @@
 ```
 sudo systemctl reload nginx
 ```
+# Build the streamchat-backend 
+```
+docker build -t streamchat-backend .
+```
