@@ -14,3 +14,6 @@ sudo systemctl reload nginx
 ```
 docker build -t streamchat-backend .
 ```
+```
+docker build -t streamchat-frontend .
+```
