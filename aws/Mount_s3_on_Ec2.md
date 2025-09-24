@@ -49,6 +49,10 @@ user_allow_other
     df -h
     ls /mnt/s3bucket
   ```
+## Edit /etc/fstab
+```
+sudo vim /etc/fstab
+```
 
 ## Step 7: Mount automatically at boot
 - Add this line to /etc/fstab so your bucket mounts automatically using the IAM role:
