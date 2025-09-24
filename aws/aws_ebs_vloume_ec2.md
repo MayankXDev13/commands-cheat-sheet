@@ -87,4 +87,24 @@ sudo growpart /dev/nvme1n1 1
   df -h
 
   ```
+
+## Unmount an EBS Volume on Ubuntu EC2
+
+## Check Mounted Volumes
+```
+df -h
+```
+## Unmount the Volume
+```
+sudo umount /mnt/data
+```
+- If it’s busy (in use), you’ll get an error. To check what’s using it:
+  ```
+  sudo lsof +f -- /mnt/data
+  ```
+## verify 
+```
+lsblk
+```
+  
   
