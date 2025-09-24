@@ -32,6 +32,14 @@
   ```
     sudo mkdir /mnt/s3bucket
   ```
+## Edit FUSE Configuration
+```
+sudo vim /etc/fuse.conf
+```
+```
+user_allow_other
+
+```
 ## Step 5: Mount the S3 bucket
   ```
     sudo s3fs my-bucket-name /mnt/s3bucket -o iam_role=auto -o allow_other
@@ -41,10 +49,11 @@
     df -h
     ls /mnt/s3bucket
   ```
+
 ## Step 7: Mount automatically at boot
-- Edit /etc/fstab
+- Add this line to /etc/fstab so your bucket mounts automatically using the IAM role:
   ```
-  s3fs#my-bucket-name /mnt/s3bucket fuse _netdev,allow_other 0 0
+  s3fs#mayankxdev13-mount-to-ec2 /mnt/s3-bucket fuse _netdev,allow_other,iam_role=auto 0 0
   ```
 - Test:
   ```
