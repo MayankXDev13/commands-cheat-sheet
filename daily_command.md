@@ -24,6 +24,11 @@ docker run --name streamchat-backend-container -p 3000:3000 --env-file .env stre
 docker run --name streamchat-frontend-container -p 4173:4173 --env-file .env streamchat-frontend:latest
 ```
 
+# Restart Docker
+```
+sudo systemctl restart docker
+```
+
 # inspect docker network
 ```
 docker network inspect <networkname>
