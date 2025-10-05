@@ -33,3 +33,7 @@ sudo systemctl restart docker
 ```
 docker network inspect <networkname>
 ```
+# Genrate Random Key
+```
+openssl rand -base64 <hom many chr>
+```
