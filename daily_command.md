@@ -37,3 +37,7 @@ docker network inspect <networkname>
 ```
 openssl rand -base64 <hom many chr>
 ```
+# Clean Docker System
+```
+docker system prune
+```
