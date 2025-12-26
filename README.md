@@ -14,3 +14,10 @@ useradd -u 1756 -d /var/www/john -m john
 - -m creates the home directory of its it doesn't exist 
 
 
+```
+import secrets
+
+token = secrets.token_hex(32)
+print(token)
+
+```
