@@ -50,7 +50,7 @@ git config --list
 
 ## Step 3A: Generate Personal Access Token (PAT)
 
-1.  Go to: https://github.com/settings/tokens\
+1.  Go to: https://github.com/settings/personal-access-tokens
 2.  Click **Fine-grained personal access tokens → Generate new token**
 3.  Select Repository access → All repositories
 4.  Set permissions:
