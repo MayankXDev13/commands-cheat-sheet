@@ -1,0 +1,6 @@
+alias k='kubectl'
+alias d='docker'
+alias dc='docker compose'
+alias tf='terraform'
+alias g='git'
+alias ll='ls -lah'
