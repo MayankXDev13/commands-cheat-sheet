@@ -1,0 +1,17 @@
+
+[Unit]
+Description=Heartbeat Demo Service
+Documentation=https://example.com/docs
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu
+ExecStart=/bin/bash /home/ubuntu/heartbeat.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
